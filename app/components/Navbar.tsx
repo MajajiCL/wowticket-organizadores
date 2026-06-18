@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, Close } from "./icons";
+import { asset } from "../asset";
 import styles from "./Navbar.module.css";
 
 const LINKS = [
@@ -31,7 +32,7 @@ export default function Navbar() {
       <nav className={`container ${styles.nav}`} aria-label="Principal">
         <a href="#top" className={styles.brand} aria-label="WowTicket.cl — inicio">
           <Image
-            src="/logos/wowticket-blanco.png"
+            src={asset("/logos/wowticket-blanco.png")}
             alt="WowTicket.cl"
             width={56}
             height={42}

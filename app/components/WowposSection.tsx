@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 import { Beer, Ticket, Coat, Parking, ArrowRight } from "./icons";
+import { asset } from "../asset";
 import styles from "./Showcase.module.css";
 
 /* Basado en el banner oficial WOWPOS: "Gestiona barra, boletería, guardarropía y estacionamiento desde un solo sistema" */
@@ -16,7 +17,7 @@ export default function WowposSection() {
     <section className="section">
       <div className={`container ${styles.band}`}>
         <Reveal className={styles.bandText}>
-          <Image src="/logos/wowpos-logo-rosado.png" alt="WOWPOS" width={160} height={40} className={styles.brandLogo} priority={false} />
+          <Image src={asset("/logos/wowpos-logo-rosado.png")} alt="WOWPOS" width={160} height={40} className={styles.brandLogo} priority={false} />
           <h2>Gestiona todo tu evento desde un solo sistema</h2>
           <p>Barra, boletería, guardarropía y estacionamiento operando con un mismo punto de venta, rápido y con pago sin contacto.</p>
           <div className={styles.posChips}>
@@ -34,7 +35,7 @@ export default function WowposSection() {
 
         <Reveal className={styles.bandMedia} delay={120}>
           <div className={`${styles.media} ${styles.mediaDevice}`}>
-            <Image src="/logos/wowpos-device.png" alt="Dispositivo WOWPOS con pago sin contacto" width={2048} height={1193} className={styles.deviceImg} />
+            <Image src={asset("/logos/wowpos-device.png")} alt="Dispositivo WOWPOS con pago sin contacto" width={2048} height={1193} className={styles.deviceImg} />
             <span className={styles.mediaTag}><Beer aria-hidden /> Pago sin contacto</span>
           </div>
         </Reveal>

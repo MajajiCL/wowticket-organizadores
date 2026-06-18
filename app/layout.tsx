@@ -3,6 +3,8 @@ import { Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
 
+const PREFIX = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? "";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800", "900"],
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     description: "Comisión 10%, dinero en 24 horas hábiles y Ticket QR seguro.",
     images: ["/logos/wowticket-color.png"],
   },
-  icons: { icon: "/logos/favicon-192.png", apple: "/logos/favicon-192.png" },
+  icons: { icon: `${PREFIX}/logos/favicon-192.png`, apple: `${PREFIX}/logos/favicon-192.png` },
 };
 
 export const viewport: Viewport = {

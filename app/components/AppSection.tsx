@@ -2,6 +2,7 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 import { Apple, GooglePlay } from "./icons";
 import { SITE } from "../site";
+import { asset } from "../asset";
 import styles from "./Showcase.module.css";
 
 /* Basado en el banner oficial: "Descarga nuestra app en Google Play y App Store" */
@@ -27,7 +28,7 @@ export default function AppSection() {
 
         <Reveal className={styles.bandMedia} delay={120}>
           <div className={styles.media}>
-            <Image src="/logos/ai-app.jpg" alt="App de WowTicket disponible en Google Play y App Store" width={1408} height={768} />
+            <Image src={asset("/logos/ai-app.jpg")} alt="App de WowTicket disponible en Google Play y App Store" width={1408} height={768} />
           </div>
         </Reveal>
       </div>

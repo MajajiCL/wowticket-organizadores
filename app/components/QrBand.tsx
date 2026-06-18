@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 import { Qr, ShieldCheck, Zap, ArrowRight } from "./icons";
+import { asset } from "../asset";
 import styles from "./Showcase.module.css";
 
 /* Basado en el banner oficial: "Ticketera Online con validación QR segura y ventas en tiempo real" */
@@ -22,7 +23,7 @@ export default function QrBand() {
 
         <Reveal className={`${styles.bandMedia}`} delay={120}>
           <div className={`${styles.media} ${styles.mediaGlow}`}>
-            <Image src="/logos/ai-qr.jpg" alt="Validación de entrada con código QR en un evento de WowTicket" width={1408} height={768} />
+            <Image src={asset("/logos/ai-qr.jpg")} alt="Validación de entrada con código QR en un evento de WowTicket" width={1408} height={768} />
             <span className={styles.mediaTag}><Qr aria-hidden /> Validación en puerta</span>
           </div>
         </Reveal>

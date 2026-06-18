@@ -1,10 +1,12 @@
 "use client";
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Sparkles, ArrowRight, Whatsapp, Qr, Chart } from "./icons";
 import { waLink } from "../site";
 import Particles from "./Particles";
 import CountUp from "./CountUp";
+import { asset } from "../asset";
 import styles from "./Hero.module.css";
 
 const BARS = [42, 60, 38, 74, 55, 88, 96];
@@ -18,7 +20,9 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} id="top" ref={ref}>
-      <div className={styles.heroBg} aria-hidden="true" />
+      <div className={styles.heroBg} aria-hidden="true">
+        <Image src={asset("/logos/ai-hero.jpg")} alt="" fill sizes="100vw" priority className={styles.heroBgImg} />
+      </div>
       <Particles className={styles.particles} />
       <div className={`container ${styles.inner}`}>
         {/* Columna texto */}

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { asset } from "../asset";
 import styles from "./Showcase.module.css";
 
 /* Prueba social: eventos reales publicados en WowTicket (posters oficiales del sitio). */
-const POSTERS = Array.from({ length: 10 }, (_, i) => `/eventos/ev${i + 1}.webp`);
+const POSTERS = Array.from({ length: 10 }, (_, i) => asset(`/eventos/ev${i + 1}.webp`));
 
 export default function EventsMarquee() {
   const loop = [...POSTERS, ...POSTERS];
