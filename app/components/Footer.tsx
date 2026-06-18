@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.brandCol}>
-          <Image src={asset("/logos/wowticket-blanco.png")} alt="WowTicket.cl" width={150} height={113} className={styles.logo} />
+          <Image src={asset("/logos/wowticket-color.png")} alt="WowTicket.cl" width={150} height={113} className={styles.logo} />
           <p>Venta de entradas online. La plataforma creada para organizadores de eventos.</p>
           <div className={styles.social}>
             <a href={SITE.facebook} target="_blank" rel="noopener" aria-label="Facebook de WowTicket"><Facebook /></a>

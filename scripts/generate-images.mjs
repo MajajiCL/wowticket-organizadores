@@ -21,12 +21,12 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const BRAND = "saturated magenta and hot-pink (#e8217c) stage lighting, atmospheric haze, shot on a professional full-frame camera, shallow depth of field, ultra sharp, high dynamic range, cinematic color grade, dark premium venue, no text, no watermark, no logos, no captions";
+const BRAND = "saturated magenta and hot-pink (#e8217c) stage lighting, atmospheric haze, award-winning editorial photography, shot on a full-frame camera with an 85mm f1.4 lens, beautiful shallow depth of field, crisp focus on the subject, high dynamic range, cinematic color grade, dark premium venue, ultra-detailed, 8k, no text, no watermark, no logos, no captions";
 
 const IMAGES = [
   { file: "ai-hero.jpg", ratio: "16:9", prompt: `Cinematic wide concert photograph: a dense crowd of silhouettes with raised hands facing a stage, brilliant magenta and pink lights with laser beams and haze, ${BRAND}` },
-  { file: "ai-qr.jpg",   ratio: "16:9", prompt: `Professional product photograph: a hand holding a black smartphone that displays a bright glowing ticket with a clean QR code, at a nightclub entrance at night, magenta neon bokeh behind, ${BRAND}` },
-  { file: "ai-app.jpg",  ratio: "16:9", prompt: `Professional lifestyle photograph: a hand holding a modern smartphone showing a sleek dark event-ticketing dashboard app with subtle charts, blurred concert stage with magenta lights behind, ${BRAND}` },
+  { file: "ai-qr.jpg",   ratio: "16:9", prompt: `Editorial close-up product photograph, a person's hand holding a sleek black smartphone whose glowing screen shows a clean event ticket with a sharp QR code, scanning it at the entrance of a concert at night, deep magenta bokeh lights and haze softly blurred in the background, premium and elegant, ${BRAND}` },
+  { file: "ai-app.jpg",  ratio: "16:9", prompt: `Editorial lifestyle photograph, a hand holding a modern smartphone that displays an elegant dark mobile dashboard app with subtle pink charts and stats, standing in front of a beautifully blurred concert stage glowing with magenta and pink lights, premium tech aesthetic, ${BRAND}` },
 ];
 
 async function generate({ file, ratio, prompt }) {
