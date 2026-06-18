@@ -34,7 +34,7 @@ export default function WowposSection() {
 
         <Reveal className={styles.bandMedia} delay={120}>
           <div className={`${styles.media} ${styles.mediaGlow}`}>
-            <Image src="/logos/foto-wowpos.jpg" alt="WOWPOS: punto de venta con pago sin contacto para eventos" width={1920} height={600} />
+            <Image src="/logos/ai-wowpos.jpg" alt="WOWPOS: punto de venta con pago sin contacto para eventos" width={1408} height={768} />
             <span className={styles.mediaTag}><Beer aria-hidden /> Un solo sistema</span>
           </div>
         </Reveal>

@@ -13,7 +13,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
-const MODEL = process.env.IMAGEN_MODEL || "imagen-3.0-generate-002";
+const MODEL = process.env.IMAGEN_MODEL || "imagen-4.0-generate-001";
 const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "public", "logos");
 
 if (!API_KEY) {

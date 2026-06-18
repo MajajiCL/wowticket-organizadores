@@ -18,6 +18,7 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} id="top" ref={ref}>
+      <div className={styles.heroBg} aria-hidden="true" />
       <Particles className={styles.particles} />
       <div className={`container ${styles.inner}`}>
         {/* Columna texto */}

@@ -27,7 +27,7 @@ export default function AppSection() {
 
         <Reveal className={styles.bandMedia} delay={120}>
           <div className={styles.media}>
-            <Image src="/logos/foto-app.jpg" alt="App de WowTicket disponible en Google Play y App Store" width={1920} height={600} />
+            <Image src="/logos/ai-app.jpg" alt="App de WowTicket disponible en Google Play y App Store" width={1408} height={768} />
           </div>
         </Reveal>
       </div>
