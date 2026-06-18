@@ -1,0 +1,12 @@
+.cta {
+  text-align: center; padding: clamp(40px, 6vw, 72px) clamp(24px, 5vw, 56px);
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(600px 300px at 50% -20%, rgba(232,33,124,.30), transparent 60%),
+    linear-gradient(180deg, var(--card-2), var(--card));
+  border-color: rgba(232,33,124,.35);
+}
+.title { font-size: clamp(1.9rem, 4.4vw, 3rem); margin: 14px 0 16px; font-weight: 900; }
+.text { color: var(--muted); max-width: 56ch; margin: 0 auto 32px; font-size: clamp(1rem, 1.6vw, 1.15rem); }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.actions svg { width: 20px; height: 20px; }

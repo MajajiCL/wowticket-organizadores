@@ -1,0 +1,25 @@
+{
+  "name": "wowticket-organizadores",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing para organizadores y productores de eventos — WOWTICKET",
+  "scripts": {
+    "dev": "next dev -p 3040",
+    "build": "next build",
+    "start": "next start -p 3040",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^12.0.0",
+    "lenis": "^1.3.23",
+    "next": "15.3.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

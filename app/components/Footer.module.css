@@ -1,0 +1,20 @@
+.footer { border-top: 1px solid var(--border); margin-top: 40px; padding-top: clamp(48px, 7vw, 80px); background: linear-gradient(180deg, transparent, rgba(232,33,124,.05)); }
+.grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; padding-bottom: 48px; }
+.brandCol { max-width: 360px; }
+.logo { height: 42px; width: auto; margin-bottom: 18px; }
+.brandCol p { color: var(--muted); font-size: .95rem; }
+.social { display: flex; gap: 12px; margin-top: 20px; }
+.social a { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; background: var(--card); border: 1px solid var(--border); color: var(--muted); transition: all .25s ease; }
+.social a:hover { color: #fff; border-color: var(--pink); transform: translateY(-3px); }
+.social svg { width: 22px; height: 22px; }
+
+.col h3 { font-size: 1rem; font-family: var(--font-display); font-weight: 700; margin-bottom: 18px; }
+.col ul { list-style: none; display: grid; gap: 12px; }
+.col a { color: var(--muted); font-size: .95rem; transition: color .2s ease; }
+.col a:hover { color: var(--pink-2); }
+
+.bottom { border-top: 1px solid var(--border); padding-block: 26px; }
+.bottom p { color: var(--muted-2); font-size: .88rem; text-align: center; }
+
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } .brandCol { grid-column: 1 / -1; } }
+@media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
