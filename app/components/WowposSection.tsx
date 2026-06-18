@@ -16,7 +16,7 @@ export default function WowposSection() {
     <section className="section">
       <div className={`container ${styles.band}`}>
         <Reveal className={styles.bandText}>
-          <p className="eyebrow">WOWPOS</p>
+          <Image src="/logos/wowpos-logo-rosado.png" alt="WOWPOS" width={160} height={40} className={styles.brandLogo} priority={false} />
           <h2>Gestiona todo tu evento desde un solo sistema</h2>
           <p>Barra, boletería, guardarropía y estacionamiento operando con un mismo punto de venta, rápido y con pago sin contacto.</p>
           <div className={styles.posChips}>
@@ -33,9 +33,9 @@ export default function WowposSection() {
         </Reveal>
 
         <Reveal className={styles.bandMedia} delay={120}>
-          <div className={`${styles.media} ${styles.mediaGlow}`}>
-            <Image src="/logos/ai-wowpos.jpg" alt="WOWPOS: punto de venta con pago sin contacto para eventos" width={1408} height={768} />
-            <span className={styles.mediaTag}><Beer aria-hidden /> Un solo sistema</span>
+          <div className={`${styles.media} ${styles.mediaDevice}`}>
+            <Image src="/logos/wowpos-device.png" alt="Dispositivo WOWPOS con pago sin contacto" width={2048} height={1193} className={styles.deviceImg} />
+            <span className={styles.mediaTag}><Beer aria-hidden /> Pago sin contacto</span>
           </div>
         </Reveal>
       </div>
