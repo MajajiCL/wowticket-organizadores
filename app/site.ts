@@ -6,6 +6,8 @@ export const SITE = {
   facebook: "https://www.facebook.com/wowticket.cl/",
   main: "https://wowticket.cl",
   organizador: "https://wowticket.cl/eres-organizador",
+  appStore: "https://apps.apple.com/us/app/wowticket/id6761659005",
+  googlePlay: "https://play.google.com/store/apps/details?id=com.ni.WowTicket",
 };
 
 export const waLink = (text = SITE.whatsappText) =>

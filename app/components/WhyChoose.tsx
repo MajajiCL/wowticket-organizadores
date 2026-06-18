@@ -1,5 +1,4 @@
 import Reveal from "./Reveal";
-import CountUp from "./CountUp";
 import { Wallet, Clock, Chart } from "./icons";
 import styles from "./Sections.module.css";
 
@@ -7,22 +6,16 @@ import styles from "./Sections.module.css";
 const BENEFITS = [
   {
     icon: Wallet,
-    to: 10,
-    suffix: "%",
-    title: "La Comisión Más Baja",
-    text: "Maximiza tus utilidades con la comisión más transparente y competitiva del mercado.",
+    title: "La comisión más conveniente",
+    text: "Maximiza tus utilidades con una comisión transparente y conveniente, sin sorpresas ni costos ocultos.",
   },
   {
     icon: Clock,
-    to: 24,
-    suffix: "h",
-    title: "Recibe tu Dinero",
-    text: "Olvídate de largas esperas. Recibe el dinero recaudado en tu cuenta en 24 horas hábiles.",
+    title: "Liquidación rápida",
+    text: "Olvídate de largas esperas y del papeleo: recibe el dinero recaudado de forma rápida y sin tanto trámite.",
   },
   {
     icon: Chart,
-    to: 100,
-    suffix: "%",
     title: "Control Total de tus Ventas",
     text: "Monitorea tus ventas y ganancias en tiempo real con nuestro panel de estadísticas avanzado.",
   },
@@ -45,10 +38,7 @@ export default function WhyChoose() {
               <Reveal key={b.title} delay={i * 90}>
                 <article className={`card card-hover ${styles.benefit}`}>
                   <div className="icon-badge"><Icon aria-hidden /></div>
-                  <p className={styles.benefitBig} style={{ marginTop: 18 }}>
-                    <CountUp to={b.to} suffix={b.suffix} />
-                  </p>
-                  <h3>{b.title}</h3>
+                  <h3 style={{ marginTop: 18 }}>{b.title}</h3>
                   <p>{b.text}</p>
                 </article>
               </Reveal>

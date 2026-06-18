@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wowticket.cl"),
   title: "Vende Entradas Online Fácil y Seguro — Plataforma para Organizadores de Eventos | Wowticket",
   description:
-    "Controla, gestiona y maximiza tus ingresos con la ticketera más ágil y con la comisión más baja del mercado. Comisión 10%, dinero en 24 horas hábiles y Ticket QR seguro.",
+    "Controla, gestiona y maximiza tus ingresos con la ticketera más ágil y con la comisión más conveniente del mercado. Liquidación rápida sin tanto trámite y Ticket QR seguro.",
   keywords: [
     "ticketera chile", "vender entradas online", "eventos chile",
     "plataforma eventos", "entradas qr", "wowticket", "productoras chile",
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     siteName: "WowTicket.cl",
     title: "La Plataforma Creada para Organizadores de Eventos | Wowticket",
     description:
-      "Controla, gestiona y maximiza tus ingresos con la ticketera más ágil y con la comisión más baja del mercado.",
+      "Controla, gestiona y maximiza tus ingresos con la ticketera más ágil y con la comisión más conveniente del mercado.",
     images: [{ url: "/logos/wowticket-color.png", width: 1890, height: 1417, alt: "WowTicket.cl" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "La Plataforma Creada para Organizadores de Eventos | Wowticket",
-    description: "Comisión 10%, dinero en 24 horas hábiles y Ticket QR seguro.",
+    description: "Comisión más conveniente, liquidación rápida y Ticket QR seguro.",
     images: ["/logos/wowticket-color.png"],
   },
   icons: { icon: `${PREFIX}/logos/favicon-192.png`, apple: `${PREFIX}/logos/favicon-192.png` },

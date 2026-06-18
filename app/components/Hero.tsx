@@ -5,7 +5,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Sparkles, ArrowRight, Whatsapp, Qr, Chart } from "./icons";
 import { waLink } from "../site";
 import Particles from "./Particles";
-import CountUp from "./CountUp";
 import { asset } from "../asset";
 import styles from "./Hero.module.css";
 
@@ -38,7 +37,7 @@ export default function Hero() {
 
           <p className={styles.subtitle}>
             Controla, gestiona y maximiza tus ingresos con la ticketera más ágil y
-            con la comisión más baja del mercado.
+            con la comisión más conveniente del mercado.
           </p>
 
           <div className={styles.ctas}>
@@ -51,8 +50,8 @@ export default function Hero() {
           </div>
 
           <ul className={styles.metrics} aria-label="Métricas destacadas">
-            <li><strong><CountUp to={10} suffix="%" /></strong><span>comisión</span></li>
-            <li><strong><CountUp to={24} suffix="h" /></strong><span>liquidación</span></li>
+            <li><strong>Comisión</strong><span>conveniente</span></li>
+            <li><strong>Liquidación</strong><span>rápida</span></li>
             <li><strong>QR</strong><span>seguro</span></li>
           </ul>
         </motion.div>

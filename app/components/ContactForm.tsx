@@ -48,8 +48,8 @@ export default function ContactForm() {
             Completa el formulario y uno de nuestros especialistas te contactará.
           </p>
           <ul className={styles.points}>
-            <li><span className="icon-badge"><Wallet aria-hidden /></span> Comisión del 10%, la más baja del mercado.</li>
-            <li><span className="icon-badge"><Clock aria-hidden /></span> Recibe tu dinero en 24 horas hábiles.</li>
+            <li><span className="icon-badge"><Wallet aria-hidden /></span> La comisión más conveniente del mercado.</li>
+            <li><span className="icon-badge"><Clock aria-hidden /></span> Liquidación rápida, sin tanto trámite.</li>
             <li><span className="icon-badge"><ShieldCheck aria-hidden /></span> Ticket QR seguro e infalsificable.</li>
           </ul>
           <a href={waLink()} target="_blank" rel="noopener" className="btn btn-ghost">

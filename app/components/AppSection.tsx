@@ -15,11 +15,11 @@ export default function AppSection() {
           <h2>Lleva el control de tu evento en el bolsillo</h2>
           <p>Descarga la app de WowTicket para gestionar tus ventas, validar tickets QR y seguir tu evento en tiempo real, estés donde estés.</p>
           <div className={styles.stores}>
-            <a href={SITE.main} target="_blank" rel="noopener" className={styles.store} aria-label="Descargar en App Store">
+            <a href={SITE.appStore} target="_blank" rel="noopener" className={styles.store} aria-label="Descargar en App Store">
               <Apple aria-hidden />
               <span className={styles.storeText}><small>Descárgala en</small><strong>App Store</strong></span>
             </a>
-            <a href={SITE.main} target="_blank" rel="noopener" className={styles.store} aria-label="Disponible en Google Play">
+            <a href={SITE.googlePlay} target="_blank" rel="noopener" className={styles.store} aria-label="Disponible en Google Play">
               <GooglePlay aria-hidden />
               <span className={styles.storeText}><small>Disponible en</small><strong>Google Play</strong></span>
             </a>

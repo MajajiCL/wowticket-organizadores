@@ -8,11 +8,11 @@ import styles from "./Sections.module.css";
 const FAQS = [
   {
     q: "¿Cuál es el costo por usar Wowticket?",
-    a: "Nuestra comisión es del 10%, la más competitiva del mercado. No hay costos ocultos ni cargos por configuración. Solo pagas cuando vendes.",
+    a: "Trabajamos con la comisión más conveniente del mercado: transparente, sin costos ocultos ni cargos por configuración. Solo pagas cuando vendes.",
   },
   {
     q: "¿Cuándo recibo el dinero de mis ventas?",
-    a: "Recibes el dinero recaudado directamente en tu cuenta bancaria en un plazo de 24 horas hábiles después de finalizado tu evento.",
+    a: "Recibes el dinero recaudado directamente en tu cuenta bancaria en un plazo de entre 24 y 48 horas hábiles después de finalizado tu evento.",
   },
   {
     q: "¿Puedo vender entradas con asientos numerados?",
