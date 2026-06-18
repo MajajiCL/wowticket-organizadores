@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
+import Ambient from "./components/Ambient";
+import BackToTop from "./components/BackToTop";
 
 const PREFIX = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? "";
 
@@ -59,8 +61,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {/* Activa las animaciones de entrada solo si hay JS (sin parpadeo, antes del paint) */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+        <Ambient />
         <SmoothScroll />
         {children}
+        <BackToTop />
       </body>
     </html>
   );
