@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Sparkles, ArrowRight, Whatsapp, Qr, Chart } from "./icons";
+import { Sparkles, ArrowRight, Whatsapp, Qr, Chart, Wallet, Clock } from "./icons";
 import { waLink } from "../site";
 import Particles from "./Particles";
 import { asset } from "../asset";
@@ -49,10 +49,10 @@ export default function Hero() {
             </a>
           </div>
 
-          <ul className={styles.metrics} aria-label="Métricas destacadas">
-            <li><strong>Comisión</strong><span>conveniente</span></li>
-            <li><strong>Liquidación</strong><span>rápida</span></li>
-            <li><strong>QR</strong><span>seguro</span></li>
+          <ul className={styles.metrics} aria-label="Destacados">
+            <li><Wallet aria-hidden /> Comisión conveniente</li>
+            <li><Clock aria-hidden /> Liquidación rápida</li>
+            <li><Qr aria-hidden /> Acceso QR seguro</li>
           </ul>
         </motion.div>
 

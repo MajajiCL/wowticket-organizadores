@@ -16,13 +16,13 @@
 .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 .ctas svg { width: 20px; height: 20px; }
 
-.metrics { display: flex; gap: 12px; margin-top: 40px; list-style: none; flex-wrap: wrap; }
+.metrics { display: flex; gap: 10px; margin-top: 38px; list-style: none; flex-wrap: wrap; }
 .metrics li {
-  display: flex; flex-direction: column; padding: 14px 22px; border-radius: 16px;
-  background: var(--card); border: 1px solid var(--border); min-width: 104px;
+  display: inline-flex; align-items: center; gap: 9px; padding: 11px 16px; border-radius: 12px;
+  background: var(--card); border: 1px solid var(--border);
+  font-family: var(--font-display); font-weight: 700; font-size: .92rem; color: #fff;
 }
-.metrics strong { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: #fff; }
-.metrics span { color: var(--muted); font-size: .9rem; }
+.metrics li svg { width: 19px; height: 19px; color: var(--pink-2); flex: none; }
 
 /* ---------- Visual ---------- */
 .visual { position: relative; min-height: 460px; }
