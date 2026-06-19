@@ -5,6 +5,7 @@
   "description": "Landing para organizadores y productores de eventos — WOWTICKET",
   "scripts": {
     "dev": "next dev -p 3040",
+    "prebuild": "node scripts/fetch-events.mjs",
     "build": "next build",
     "start": "next start -p 3040",
     "lint": "next lint"
